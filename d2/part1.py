@@ -25,12 +25,13 @@ class Submarine(object):
         return self.pos_x * self.pos_z
 
 
-with open("input.txt") as f:
-    lines = f.readlines()
+if __name__ == "__main__":
+    with open("input.txt") as f:
+        lines = f.readlines()
 
-sub = Submarine()
+    sub = Submarine()
 
-for command in lines:
-    sub.command(command)
+    for command in lines:
+        sub.command(command)
 
-print(sub.product)
+    print(sub.product)
