@@ -5,8 +5,10 @@ description = ""
 authors = ["Jasper Capel <jcapel@ebay.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.11"
 pytest = "^6.2.5"
+bitarray = "^2.3.4"
+numpy = "^1.21.4"
 
 [tool.poetry.dev-dependencies]
 

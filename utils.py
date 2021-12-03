@@ -11,4 +11,4 @@ def readlines(filename: str):
     )
 
     with open(file) as f:
-        return f.readlines()
+        return [x.strip() for x in f.readlines()]
