@@ -20,7 +20,7 @@ class Fish(object):
         if self.days_remaining == 0:
             self.reset(False)
             fry = Fish(generation=self.generation+1)
-            self.offspring.append(fry)
+            #self.offspring.append(fry)
             return (self, fry)
         self.days_remaining -= 1
         return (self, )
@@ -53,6 +53,7 @@ if __name__ == "__main__":
     school = School([Fish(days_remaining=int(x)) for x in input])
 
     for i in range(80):
+        print(i)
         school.new_day()
-
+    print()
     print(len(school))
