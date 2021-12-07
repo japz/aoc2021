@@ -13,7 +13,6 @@ if __name__ == "__main__":
     func = np.vectorize(lambda x: (x * (x + 1)) / 2)
     for i in range(max_value):
         x = np.array([i] * array.size)
-        print(x)
         out[i] = sum(func(np.abs(np.subtract(array, x))))
 
     print(np.min(out))
