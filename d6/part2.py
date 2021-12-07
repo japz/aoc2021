@@ -30,7 +30,5 @@ if __name__ == "__main__":
     school = School([int(x) for x in input])
 
     for i in range(256):
-        print(school.buckets)
         school.new_day()
-    print()
     print(school.total)
